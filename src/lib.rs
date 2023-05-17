@@ -1,10 +1,19 @@
 use std::format;
-
+/// A Savings account
 pub struct SavingsAccount {
     balance: i32,
 }
 
 impl SavingsAccount {
+    /// Creates a `SavingsAccount`
+    ///
+    /// #Examples
+    ///
+    /// ```
+    /// use bank::SavingsAccount;
+    /// let account = SavingsAccount::new();
+    /// assert_eq!(account.get_balance(), 0);
+    /// ```
     pub fn new() -> SavingsAccount {
         SavingsAccount { balance: 0 }
     }
